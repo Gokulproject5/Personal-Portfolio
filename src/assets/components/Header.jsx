@@ -42,7 +42,7 @@ const Header = () => {
                         <img src="/favicon.png" className='relative w-9 h-9 object-contain' alt="logo" />
                     </div>
                     <h2 className='text-xl sec font-black tracking-wider dark:text-white uppercase'>
-                        GOKUL<span className='text-purple-600 px-1'>.</span>
+                        GOKUL
                     </h2>
                 </div>
 

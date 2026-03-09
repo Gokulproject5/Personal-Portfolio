@@ -26,9 +26,9 @@ const Skill = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 space-y-4">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-bold tracking-widest uppercase">
+          {/* <div className="inline-block px-4 py-1.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-bold tracking-widest uppercase">
             My Abilities
-          </div>
+          </div> */}
           <h1 className="text-4xl md:text-5xl font-black dark:text-white leading-tight">
             Technical <span className="text-purple-600 dark:text-purple-400">Expertise</span>
           </h1>
@@ -38,7 +38,7 @@ const Skill = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:mx-auto lg:grid-cols-4 max-w-4xl  gap-6 md:gap-8">
           {skillSet.map((skill, index) => (
             <div
               key={index}

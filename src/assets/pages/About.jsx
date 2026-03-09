@@ -25,7 +25,7 @@ export const About = () => {
 
   return (
     <div className="bg-slate-50 dark:bg-slate-950 transition-colors duration-700 ease-in-out">
-
+      
       {/* overlay*/}
       <section id="about" className="sticky-section sticky top-0 h-screen flex items-center z-20 overflow-hidden bg-slate-50 dark:bg-slate-950">
         {/* Background  */}
@@ -40,7 +40,7 @@ export const About = () => {
             {/* LEFT */}
             <div className="w-full lg:w-3/5 space-y-8 text-center lg:text-left">
               <div className="space-y-4">
-                <h1 className="text-4xl md:text-7xl font-black dark:text-white leading-tight tracking-tighter">
+                <h1 className="text-4xl md:text-7xl text-purple-600 font-black dark:text-white leading-tight tracking-tighter">
                   About
                 </h1>
                 <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">

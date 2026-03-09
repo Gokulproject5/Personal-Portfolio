@@ -49,7 +49,7 @@ export const Contact = () => {
             <span className="border-b-2 border-slate-200 dark:border-slate-800 group-hover:border-purple-600 transition-colors">
               {revealed ? "agokul110@gmail.com" : "Click to reveal email"}
             </span>
-            <div className={`p-3 rounded-full bg-slate-900 dark:bg-purple-600 group-hover:bg-purple-500 text-white transition-all duration-500 ${revealed ? 'rotate-0' : 'group-hover:rotate-45'}`}>
+            <div className={`p-3 rounded-full bg-slate-900 dark:bg-purple-600 group-hover:bg-purple-500 text-white transition-all duration-500 ${revealed ? 'rotate-0' : 'group-hover:-rotate-25'}`}>
               <HiOutlineArrowNarrowRight size={24} />
             </div>
           </button>
@@ -66,11 +66,11 @@ export const Contact = () => {
             ))}
           </div>
 
-          <h3 className="text-2xl font-black tracking-[0.3em] text-slate-900 dark:text-white mb-8">GOKUL</h3>
+          <h3 className="text-2xl sec font-black tracking-[0.3em] text-slate-900 dark:text-white mb-8">GOKUL</h3>
 
           {/* Quick Links */}
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-12">
-            {["Home", "Projects", "About", "Skills"].map((link) => (
+            {["Home", "Project", "About", "Skills"].map((link) => (
               <a key={link} href={`#${link.toLowerCase()}`} className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
                 {link}
               </a>

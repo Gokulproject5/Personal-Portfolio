@@ -14,17 +14,17 @@ export const Home = () => {
       className="sticky-section min-h-screen flex py-12 md:py-30 sticky top-0 z-10 justify-center bg-slate-50 dark:bg-slate-950 transition-colors duration-500 overflow-hidden"
     >
       {/* Background */}
-      <div className="absolute top-0 left-0 min-w-7xl h-full opacity-20 dark:opacity-40 pointer-events-none">
+      {/* <div className="absolute top-0 left-0 min-w-7xl h-full opacity-20 dark:opacity-40 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-600 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600 rounded-full blur-[120px]"></div>
-      </div>
+      </div> */}
 
       <section className=" mx-auto py-10 px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
 
           {/* Profile Image  */}
           <div className="relative group">
-            <div className="absolute -inset-1 bg-linear-to-r from-purple-600 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+            {/* <div className="absolute -inset-1 bg-linear-to-r from-purple-600 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div> */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-110 lg:h-110 rounded-full border-4 border-white dark:border-slate-800 bg-white overflow-hidden shadow-2xl">
               <img
                 src="/profile.png"
