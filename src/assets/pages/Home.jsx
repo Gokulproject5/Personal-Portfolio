@@ -27,7 +27,7 @@ export const Home = () => {
             <div className="absolute -inset-1 bg-linear-to-r from-purple-600 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-110 lg:h-110 rounded-full border-4 border-white dark:border-slate-800 bg-white overflow-hidden shadow-2xl">
               <img
-                src="./src/assets/images/profile.png"
+                src="/profile.png"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 alt="Gokulakrishnan A"
               />

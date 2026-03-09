@@ -59,7 +59,7 @@ export const About = () => {
 
             <div>
               <div className=' w-96 h-96  border-2 border-slate-200 dark:border-slate-800 rounded-full '>
-                <img src="./src/assets/images/profile.png" className='w-full h-full object-cover rounded-full' alt="" />
+                <img src="/profile.png" className='w-full h-full object-cover rounded-full' alt="" />
               </div>
             </div>
 

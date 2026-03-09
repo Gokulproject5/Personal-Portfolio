@@ -9,16 +9,16 @@ const Project = () => {
       tech: ["MongoDB", "Express", "React", "Node"],
       github: "https://github.com/Gokulproject5/law-based-ai-bot-application",
       live: "https://nyayalite-com.onrender.com/",
-      image: "./src/assets/images/nyayalite.png"
+      image: "/nyayalite.png"
     },
    
     {
       title: "Portfolio Website",
       description: "Responsive personal portfolio built with Tailwind CSS and React.",
       tech: ["React", "Tailwind", "Vite"],
-      github: "https://github.com",
-      live: "https://yourlink.com",
-      image: "/src/assets/images/portfolio.png"
+      github: "https://github.com/Gokulproject5/Personal-Portfolio",
+      live: "https://personal-portfolio-lyart-eight-94.vercel.app/",
+      image: "/portfolio.png"
     }
   ];
 
@@ -37,7 +37,7 @@ const Project = () => {
             <div key={index} className="group bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md hover:shadow-xl transition-all">
               {/* Image Container */}
               <div className="overflow-hidden">
-                <img src={project.image} alt={project.title} className="w-full bg-amber-50  h-48 object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src={project.image} alt={project.title} className="w-full bg-amber-50  h-48 object-fit group-hover:scale-110 transition-transform duration-500" />
               </div>
 
               {/* Content */}
