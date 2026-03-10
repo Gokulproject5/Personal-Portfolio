@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -6,16 +7,9 @@ h1 {
 }
 
 body {
-  @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Sansita+Swashed:wght@300..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
-  font-family: "Google Sans Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+  font-family: "Varela Round", Arial, sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "ROND" 0;
 }
 
 .sec {
@@ -30,15 +24,12 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow-y: auto;
+  overscroll-behavior: none;
 }
 
-section,
-main,
-footer {
-  scroll-snap-align: start;
+/* Offset scroll targets so fixed header doesn't cover them */
+section[id],
+main[id],
+footer[id] {
+  scroll-margin-top: 72px;
 }
-
-

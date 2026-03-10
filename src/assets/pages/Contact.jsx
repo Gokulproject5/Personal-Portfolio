@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SiGithub, SiLinkedin, SiInstagram, SiYoutube } from 'react-icons/si';
 import { HiOutlineArrowNarrowRight, HiOutlineMoon, HiOutlineSun } from 'react-icons/hi';
 import { SlSocialTwitter } from 'react-icons/sl';
-import { BiArrowFromBottom, BiArrowFromTop } from 'react-icons/bi';
+import { BiArrowToTop } from 'react-icons/bi';
 
 export const Contact = () => {
   const [revealed, setRevealed] = useState(false);
@@ -10,16 +10,18 @@ export const Contact = () => {
   const socialLinks = [
     { icon: <SiInstagram />, href: "www.instagram.com" },
     { icon: <SiLinkedin />, href: "https://www.linkedin.com/in/gokulakrishnan-a-g8608" },
-  
     { icon: <SiGithub />, href: "https://github.com/Gokulproject5/" },
   ];
-    const scrollTo = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-            
-        }
-    };
+  const scrollTo = (id) => {
+    if (id === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({ top: element.offsetTop - 72, behavior: 'smooth' });
+    }
+  };
   return (
     <footer id="contact" className="sticky top-0 z-[60] min-h-screen transition-colors duration-700 bg-slate-50 dark:bg-[#020617] text-slate-900 dark:text-white pt-24 pb-10 overflow-hidden font-sans">
 
@@ -36,7 +38,7 @@ export const Contact = () => {
 
         {/* Contact Section */}
         <div className="mb-24">
-          
+
 
           <h2 className="text-4xl md:text-8xl font-black tracking-tighter mb-12">
             Let's have a <span className="italic font-serif text-purple-600 dark:text-purple-400">chat</span>
@@ -70,10 +72,19 @@ export const Contact = () => {
 
           {/* Quick Links */}
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-12">
-            {["Home", "Project", "About", "Skills"].map((link) => (
-              <a key={link} href={`#${link.toLowerCase()}`} className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
-                {link}
-              </a>
+            {[
+              { label: "Home", id: "home" },
+              { label: "Projects", id: "project" },
+              { label: "About", id: "about" },
+              { label: "Skills", id: "skills" },
+            ].map(({ label, id }) => (
+              <button
+                key={id}
+                onClick={() => scrollTo(id)}
+                className="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+              >
+                {label}
+              </button>
             ))}
           </div>
 
@@ -84,11 +95,12 @@ export const Contact = () => {
       </div>
 
 
-      <button 
-         onClick={()=>scrollTo('home')}   
+      <button
+        onClick={() => scrollTo('home')}
+        title="Back to top"
         className="fixed bottom-6 right-6 w-10 h-10 flex items-center justify-center rounded-full bg-white dark:bg-slate-800 shadow-xl border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-yellow-400 z-50 hover:scale-110 active:scale-95 transition-all"
       >
-        <BiArrowFromBottom />
+        <BiArrowToTop size={18} />
       </button>
     </footer>
   );

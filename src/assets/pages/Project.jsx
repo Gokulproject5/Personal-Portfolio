@@ -23,7 +23,7 @@ const Project = () => {
   ];
 
   return (
-    <section id="project" className="sticky-section min-h-screen py-24 sticky top-0 z-50 px-5 bg-slate-50 dark:bg-slate-950 transition-colors overflow-hidden">
+    <section id="project" className="min-h-screen py-24 sticky top-0 z-50 px-5 bg-slate-50 dark:bg-slate-950 transition-colors backdrop-blur-xl rounded-t-[60px] border-t border-slate-200 dark:border-slate-800 shadow-[0_-20px_50px_rgba(0,0,0,0.1)]  overflow-hidden">
       {/* Overlsy */}
       <div className="absolute inset-0 opacity-20 dark:opacity-40 pointer-events-none">
         <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600 rounded-full blur-[120px]"></div>

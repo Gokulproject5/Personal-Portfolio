@@ -16,7 +16,7 @@ const Skill = () => {
     <section
       id="skills"
 
-      className="sticky-section sticky top-0 z-40 min-h-screen py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-500 shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] rounded-t-[50px] lg:rounded-t-[100px]"
+      className="sticky top-0 z-40 min-h-screen py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-500 backdrop-blur-3xl shadow-[0_-20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_-20px_50px_rgba(0,0,0,0.3)] rounded-t-[60px] lg:rounded-t-[100px]"
     >
       {/* Background Decor */}
       <div className="absolute inset-0 opacity-10 dark:opacity-20 pointer-events-none overflow-hidden rounded-t-[50px] lg:rounded-t-[100px]">
@@ -26,9 +26,6 @@ const Skill = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 space-y-4">
-          {/* <div className="inline-block px-4 py-1.5 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-bold tracking-widest uppercase">
-            My Abilities
-          </div> */}
           <h1 className="text-4xl md:text-5xl font-black dark:text-white leading-tight">
             Technical <span className="text-purple-600 dark:text-purple-400">Expertise</span>
           </h1>

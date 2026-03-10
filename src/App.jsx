@@ -6,18 +6,20 @@ import '@fontsource-variable/sansita-swashed';
 import ApiProvider from './assets/context/ApiProvider.jsx'
 import Skill from './assets/pages/Skill.jsx'
 import Project from './assets/pages/Project.jsx'
+import Education from './assets/pages/Education.jsx';
 
 function App() {
     return (
         <ApiProvider>
-            <div className="relative bg-slate-50 dark:bg-slate-950 transition-colors duration-500 overflow-x-hidden">
+            {/* <div className="relative bg-slate-50 dark:bg-slate-950 transition-colors duration-500 overflow-x-hidden"> */}
                 <Header />
                 <Home />
                 <About />
+                <Education />
                 <Skill />
                 <Project />
                 <Contact />
-            </div>
+            {/* </div> */}
         </ApiProvider>
     )
 }
